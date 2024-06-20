@@ -3,12 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desafio simulando ano bisexto</title>
+  <title>Desafio simulando ano bissexto</title>
 </head>
 <body>
-  <h1>Desafio simulando ano bisexto</h1>
+  <h1>Desafio simulando ano bissexto</h1>
+ 
 
   <script>
+  /*
+  DESAFIO:
+
+  Mostre na tela os anos a partir de 1004 até o ano 2024, pulando de quatro em 
+  quatro anos.
+
+  ex:
+  1004
+  1008
+  1012
+  E assim por diante...
+  É como mostrar os anos bissextos, mas sem as regras para descobrir se um ano 
+  é bissexto ou não. 
+
+  */
+
     for(let ano = 1004; ano <= 2024; ano++){
       if(ano % 4 === 0)
       document.write(ano + '<br>')
