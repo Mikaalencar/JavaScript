@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio dos dados2</title>
+</head>
+<body>
+  <h1>Desafio dos dados2</h1>
+
+  <script>
+    /*
+  Jogue dois dados quantas vezes forem necessárias até que a soma dos dados seja par por 10 vezes. Quantas vezes os dados foram jogados?
+
+  resoluçao do exercício feita para forçar o uso do break, para ajudar na explicação do prof!
+  */
+
+  
+  let vezesDadosJogados = 0
+  let vezesSomaPar = 0
+
+  while(true){
+    let d1 = parseInt(Math.random() * 6 + 1)
+    let d2 = parseInt(Math.random() * 6 + 1)
+    
+    console.log(d1, d2, vezesDadosJogados, vezesSomaPar)
+    vezesDadosJogados++
+
+    if((d1 + d2) % 2 === 0){
+      vezesSomaPar++
+    }
+    if(vezesSomaPar >= 10){
+      break
+    }
+
+
+  }
+  console.log('Os dados foram jogados ' + vezesDadosJogados + ' vezes!')
+  </script>
+</body>
+</html>
