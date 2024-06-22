@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio dos dados 3</title>
+</head>
+<body>
+  <h1>Desafio dos dados 3</h1>
+
+  <script>
+    /*
+    Jogue dois dados quantas vezes forem necessárias até que a soma dos pontos dos dados seja par por 10 vezes. Não contabilize as vezes em que os dados forem iguais. Quantas vezes os dados foram jogados?
+    */
+
+    
+  let vezesDadosJogados = 0
+  let vezesSomaPar = 0
+
+  while(true){
+    let d1 = parseInt(Math.random() * 6 + 1)
+    let d2 = parseInt(Math.random() * 6 + 1)
+    
+    console.log(d1, d2, vezesDadosJogados, vezesSomaPar)
+    vezesDadosJogados++
+
+    if( d1 === d2){
+        continue
+      }
+
+    if((d1 + d2) % 2 === 0){
+      vezesSomaPar++
+    }
+    if(vezesSomaPar >= 10){
+      break
+    }
+
+
+  }
+  console.log('Os dados foram jogados ' + vezesDadosJogados + ' vezes!')
+
+  </script>
+</body>
+</html>

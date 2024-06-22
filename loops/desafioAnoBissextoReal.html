@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio ano Bissexto real</title>
+</head>
+<body>
+  <h1>Desafio ano Bissexto real</h1>
+
+  <script>
+    /*
+    MOstre na tela todos os anos bissextos segundo a regra do mundo real. Utilize os controladores de fluxo break e/ou continue caso queira.
+    */
+    for(let i = 0; i <= 2024; i++){
+      if(i % 4 === 0 && !(i % 100 === 0) || i % 400 === 0){
+        console.log(i)
+        continue
+
+      }
+    }
+    
+    //soluçao do professor
+    /*
+    for(let ano = 1004; ano <= 2024; ano += 4)
+      let anoBissexto = ano % 100 != 0 || ano % 400 === 0
+
+      if(anoBissexto){
+        console.log(ano, 'é ano bissexto')
+      } else {
+        console.log(ano, 'não é ano bissexto')
+      }
+    */
+
+  </script>
+</body>
+</html>
