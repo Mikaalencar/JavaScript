@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acessar valores de modo inverso</title>
+  </head>
+  <body>
+    <h1>Acessar valores de modo inverso</h1>
+
+    <script>
+      //Dado um aray de nomes, mostre na tela todos os nomes do array de trás pra frente, o ultimo nome será o primeiro na página.
+      const nomes = ['Mariana', 'Pedro', 'Otávio', 'Lucas', 'Sophia', 'Ana']
+
+      for (let i = nomes.length - 1; i >= 0; i--) {
+        document.write( i + '<br>')
+        document.write( nomes[i] + '<br>')
+      }
+    </script>
+  </body>
+</html>

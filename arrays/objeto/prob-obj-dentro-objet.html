@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objeto dentro de um objeto</title>
+  </head>
+  <body>
+    <h1>Objeto dentro de um objeto</h1>
+
+    <script>
+      //Dado os seguintes objetos: pessoa = nome: 'João', sobrenome: 'Fagundes'. Edereço = rua: 'Rua das tulipas', numero: 302. Adicione uma propriedade chamada endereço em pessoa que aponte para o objeto endereço
+
+      const endereco = {
+        rua: 'Rua das Tulipas',
+        numero: '302'
+      }
+
+      const pessoa = {
+        nome: 'João',
+        sobrenome: 'Fagundes',
+        endereco: endereco
+      }
+
+      // Array
+      const array = ['texto', 2, undefined, { name: 'value' }]
+      /**
+       *
+       * const array  = {
+       *  0: 'texto',
+       *  1: 2,
+       *  2: undefined,
+       * }
+       */
+
+      // Object
+      const obj = { texto: 'texto1', numero: 2 }
+
+      //document.write(array[0] + '<br />')
+      //document.write('<br />')
+      //document.write(obj['texto'] + '<br />')
+      //document.write(obj.texto + '<br />')
+
+      const keys = Object.keys(obj)
+      const values = Object.values(obj)
+
+      for (let index = 0; index < array.length; index++) {
+        const element = array[index]
+        document.write(values + '<br>')
+      }
+
+       document.write(`${pessoa.nome} mora em ${pessoa.endereco.rua}, número ${pessoa.endereco.numero}`)
+    </script>
+  </body>
+</html>

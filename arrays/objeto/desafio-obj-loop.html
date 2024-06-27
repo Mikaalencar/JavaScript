@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Loop... for in</title>
+  </head>
+  <body>
+    <h1>Desafio Loop... for in</h1>
+
+    <script>
+      //Mostre no console todas as propriedades e seus respectivos valores do objeto pessoa.
+      
+      //O loop for... in serve para interagir com um objeto (vai percorrer as propriedades de um objeto)
+      const endereco = {
+        rua: 'Rua das Tulipas',
+        numero: '302'
+      }
+
+      const pessoa = {
+        nome: 'João',
+        sobrenome: 'Fagundes',
+        endereco: endereco //quando a propriedade e valor dos elementos tiverem exatamente o mesmo nome, pode-se colocar somente o nome na propriedade.
+      }
+
+      for(let prop in pessoa){
+        console.log(prop)
+        console.log(pessoa[prop])
+      }
+    </script>
+  </body>
+</html>

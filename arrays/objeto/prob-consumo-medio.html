@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio consumo médio gasolina</title>
+  </head>
+  <body>
+    <h1>Desafio consumo médio gasolina</h1>
+
+    <script>
+      //dado o seguinte objeto: carro: uno, ano: 2023, km: 10000, combustivel: gasolina, litrosconsumidos: 625. Mostre a seguinte mensagem na tela: o carro Uno 2023 fez em média xxx km/l de gasolina.
+
+      const carro = {
+        marca: 'Fiat',
+        modelo: 'uno',
+        ano: 2023,
+        km: 10000,
+        combustivel: 'gasolina',
+        litrosConsumidos: 625
+      }
+      let consumoMedio = carro.km / carro.litrosConsumidos
+      document.write(
+        `O carro ${carro.marca} ${carro.modelo} ano ${carro.ano} fez em média ${consumoMedio} km/L de ${carro.combustivel}`
+      )
+    </script>
+  </body>
+</html>

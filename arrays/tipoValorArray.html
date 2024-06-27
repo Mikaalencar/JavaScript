@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acessar valores no array</title>
+  </head>
+  <body>
+    <h1>Acessar valores no array</h1>
+
+    <script>
+      //Dado um array qualquer, mostre em um alert um boolean indicando se encontrou um dos seguintes valores nesse array: null, undefined ou NaN
+
+      const aQualquer = [13, 65, 18, 'valor']
+      let valor = false
+
+      for (let i = 0; i < aQualquer.length; i++) {
+        let v = aQualquer[i]
+
+        if (v === null || v === undefined || isNaN(v)) {
+          valor = true
+          break
+        }
+      }
+      alert('Temos algum valor null, undefined ou NaN? ' + valor)
+    </script>
+  </body>
+</html>
