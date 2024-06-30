@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array com objetos</title>
+  </head>
+  <body>
+    <h1>Array com objetos</h1>
+    <!--Dado um array contendo 5 objetos (onde cada objeto possui duas propriedades 'nome' e 'email'), mostrar em uma lista (tag <ul>) cada um desses nomes com seus respectivos emails-->
+    <ul id="listaPessoas">
+      <li>Daniel: Daniel@server.com</li>
+      <li>Maria: maria@server.com</li>
+      <li>Lucas: lucasl@server.com</li>
+    </ul>
+    <script>
+      const pessoas = [
+        { nome: 'Mika', email: 'Mika@gmail.com' },
+        { nome: 'Joao', email: 'Joao@gmail.com' },
+        { nome: 'kelly', email: 'Kelly@gmail.com' },
+        { nome: 'Laura', email: 'Laura@gmail.com' },
+        { nome: 'Ana', email: 'Ana@gmail.com' }
+      ]
+
+      const listaPessoas = document.getElementById('listaPessoas')
+      for (let i = 0; i < pessoas.length; i++) {
+        listaPessoas.innerHTML += `<li> ${pessoas[i].nome}: ${pessoas[i].email} </li> `
+      }
+    </script>
+  </body>
+</html>

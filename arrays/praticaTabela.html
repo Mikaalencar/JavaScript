@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratica</title>
+  </head>
+  <body>
+    <ul id="listaCarros">
+      <li>Uno: 2023</li>
+      <li>Cronos: 2022</li>
+  
+    </ul>
+
+    <script>
+      const carros = [
+        { nome: 'Pulse', ano: '2024' },
+        { nome: '500', ano: '2020' },
+        { nome: 'Palio', ano: '2016' },
+        { nome: 'Fastback', ano: '2025' },
+        { nome: 'Toro', ano: '2021' }
+      ]
+      document.getElementById('listaCarros').innerHTML = `<li>O carro Uno é do ano 2023 </li><li> O carro Cronos é do ano 2022</li>`
+      
+      const listaCarros = document.getElementById('listaCarros')
+
+      for(let i = 0; i < carros.length; i++){
+        listaCarros.innerHTML += `<li> O carro ${carros[i].nome} é do ano ${carros[i].ano}`
+      }
+      
+    </script>
+  </body>
+</html>
